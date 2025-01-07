@@ -1,0 +1,1 @@
+galleon.sh install wildfly:current#33.0.2.Final --dir=wildfly --default-configs=standalone/standalone.xml --layers=jaxrs-server,core-server,web-console,microprofile-config,microprofile-openapi

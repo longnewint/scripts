@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eu
+
 curl -w @- -o /dev/null -s "$@" <<'EOF'
  %{scheme}/%{http_version} %{method} %{http_code}\n
  content-type:  %{content_type}\n

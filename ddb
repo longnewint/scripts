@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eu
+
 cd ~/app/dynamodb
 
 java -Djava.library.path=/home/nhl/dynamodb/DynamoDBLocal_lib -jar /home/nhl/app/dynamodb/DynamoDBLocal.jar -sharedDb

@@ -1,3 +1,5 @@
 #!/bin/sh
 
+set -eu
+
 ~/app/wildfly/bin/jboss-cli.sh --connect command=:shutdown

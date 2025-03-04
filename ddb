@@ -2,8 +2,8 @@
 
 set -eu
 
-cd ~/app/dynamodb
+cd ~/app/nosql-workbench/resources/resources/dynamodb_local
 
-java -Djava.library.path=/home/nhl/dynamodb/DynamoDBLocal_lib -jar /home/nhl/app/dynamodb/DynamoDBLocal.jar -sharedDb
+java -Djava.library.path=DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
 
 cd

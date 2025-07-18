@@ -4,10 +4,8 @@ set -euo pipefail
 
 stack_id=$(kdotool search --class $1)
 
-# if stack_id is empty then run the application
 if [ -z "$stack_id" ]; then
   $1 &
-# else raise the application
 else
-  kdotool windowraise $stack_id
+  kdotool windowactivate $stack_id
 fi

@@ -1,6 +1,0 @@
-#!/bin/bash
-
-set -euo pipefail
-
-# focus or open
-wmctrl -xa $1 || $1 &

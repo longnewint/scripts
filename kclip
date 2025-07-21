@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -euo pipefail
+
+content=$(qdbus org.kde.klipper /klipper org.kde.klipper.klipper.getClipboardHistoryMenu | fzf)
+
+qdbus org.kde.klipper /klipper org.kde.klipper.klipper.setClipboardContents $content

@@ -1,0 +1,1 @@
+while true; do time wget -r -l2 --spider --delete-after -d 127.0.0.1 http://127.0.0.1 > /dev/null 2>&1; done

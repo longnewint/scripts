@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -euo pipefail
+
+git clone --no-checkout --depth 1 $1
+cd $FOLDER
+
+git sparse-checkout init --cone
+git sparse-checkout set $SUBFOLDER
+
+git checkout main

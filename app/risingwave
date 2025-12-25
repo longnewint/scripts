@@ -1,1 +1,6 @@
-/home/nhl/app/risingwave/risingwave
+#!/bin/bash
+
+set -euo pipefail
+
+cd ~/app/risingwave
+./risingwave

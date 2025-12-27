@@ -3,4 +3,4 @@
 set -euo pipefail
 
 cd ~/app/risingwave
-./risingwave
+./risingwave &> ./rw.log &
